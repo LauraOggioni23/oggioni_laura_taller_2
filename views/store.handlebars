@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Taller 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/store/main.css" />
+
+</head>
+
+<body>
+    <header class="global">
+        <!--navegacion global-->
+
+
+        <a href="#">
+            <h2>Maquillaje</h2>
+        </a>
+        <a href="#">
+            <h2>Accesorios</h2>
+        </a>
+
+
+
+        <img class="global__logo" src="/store/Insumos/Chanel_logo.png" alt=" ">
+
+
+
+        <a href="#">
+            <h2>Colecciones</h2>
+        </a>
+        <a href="#">
+            <h2>Promociones</h2>
+        </a>
+
+    </header>
+    <!--Sub navegacion global-->
+    <div class="global__subcategory">
+        <img src="/store/Insumos/carrito.png" alt=" ">
+
+    </div>
+
+
+    <!--Colección Flawless-->
+    <section class="collection">
+
+        <article class="collection__top">
+            <h2>Colección: </h2>
+            <h1>
+                <span> Hello Flawless</span>
+            </h1>
+            <br>
+        </article>
+
+        <!--<p>Selecciona el filtro de tu interés</p>-->
+
+    </section>
+
+    <!--Filtros-->
+    <section class="filters">
+
+        <article class="filters__left">
+
+
+            <h2>Organizar por precio:</h2>
+            <br>
+            <div class="left__dropdown">
+                <select>
+                    <option value="first">$30.000 - $60.000</option>
+                    <option value="second">$61.000 - $90.000</option>
+                    <option value="third">$91.000 - $120.000</option>
+                    <option value="fourth">$121.000 - $150.000</option>
+
+                </select>
+            </div>
+
+            </div>
+        </article>
+
+        <article class="filters__center">
+            <h2>Categorías:</h2>
+            <br>
+
+            <div class="center__categories">
+                <div class="center__left">
+                    <img src="/store/Insumos/rouge-allure-la-barra-de-labios-con-intensidad-186-sensible-3_5g.3145891601862_ES.jpg">
+                    <img src="/store/Insumos/les-4-ombres-sombras-de-ojos-efectos-multiples-202-tisse-camelia-2g.3145891642025.jpg">
+                </div>
+                <div class="center__right">
+                    <img src="/store/Insumos/le-vernis-larga-duracion-588-nuvola-rosa-13ml.3145891595888.jpg">
+                    <img src="/store/Insumos/rouge-coco-gloss-brillo-de-labios-hidratante-744-subtil-55g.3145891567441.jpg">
+                </div>
+            </div>
+
+
+        </article>
+
+        <article class="filters__right">
+            <h2>Selecciona el color:</h2>
+            <br>
+
+            <div class="right__colors">
+                <div class="right__circles">
+
+                    <div class="ball blue"></div>
+                    <div class="ball gray"></div>
+                    <div class="ball red"></div>
+                    <div class="ball black"></div>
+                    <div class="ball pink"></div>
+                    <div class="ball lightBrown"></div>
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+    <hr> <!--línea que divide-->
+
+    <!--plantilla producto-->
+    <section class="products">
+
+        <!--productos primera fila-->
+
+
+        <article class="products__first">
+
+            {{#each prod}}
+            <div class="one">
+                <a href="/description">
+                <img src="/store/Insumos/les-4-ombres-sombras-de-ojos-efectos-multiples-304-mystere-et-intensite-2g.3145891643046.jpg" alt=" ">
+                <h3>{{nombre1}}</h3>
+
+                <h3>{{nombre2}}</h3>
+
+                <h2>
+                    <span>${{precio}}</span>
+                </h2>
+            </div>
+            {{/each}}
+            </a>
+<!--
+            <div class="two">
+                <img src="/store/Insumos/mascara.jpg" alt=" ">
+                <h3>Máscara</h3>
+
+                <h3>ultra volumen</h3>
+
+                <h2>
+                    <span>$50.000</span>
+                </h2>
+            </div>
+
+            <div class="three">
+                <img src="/store/Insumos/desmaquillante-ojos.jpg" alt=" ">
+                <h3>Desmaquillante</h3>
+
+                <h3>intenso de ojos</h3>
+
+                <h2>
+                    <span>$80.000</span>
+                </h2>
+            </div>
+
+            <div class="four">
+                <img src="/store/Insumos/lapiz-contorno-ojos.jpg" alt=" ">
+                <h3>Lápiz contorno</h3>
+
+                <h3>de ojos</h3>
+
+                <h2>
+                    <span>$40.000</span>
+                </h2>
+            </div>
+        </article>
+
+-->
+        <!--productos segunda fila-->
+<!--
+        <article class="products__second">
+            <div class="one">
+                <img src="/store/Insumos/mascara-gel.jpg" alt=" ">
+                <h3>Máscara gel</h3>
+
+                <h3>en 3D</h3>
+
+                <h2>
+                    <span>$60.000</span>
+                </h2>
+            </div>
+
+            <div class="two">
+                <img src="/store/Insumos/base-iluminadora.jpg" alt=" ">
+                <h3>Base</h3>
+
+                <h3>iluminadora</h3>
+
+                <h2>
+                    <span>$85.000</span>
+                </h2>
+            </div>
+
+            <div class="three">
+                <img src="/store/Insumos/delineador ojos y cejas.jpg" alt=" ">
+                <h3>Delineador</h3>
+
+                <h3>de ojos y cejas</h3>
+
+                <h2>
+                    <span>$80.000</span>
+                </h2>
+            </div>
+
+            <div class="four">
+                <img src="/store/Insumos/delineador rosa.jpg" alt=" ">
+                <h3>Delineador</h3>
+
+                <h3>fino brillante</h3>
+
+                <h2>
+                    <span>$40.000</span>
+                </h2>
+            </div>
+        </article>
+-->
+
+        <!--productos tercera fila-->
+<!--
+        <article class="products__second">
+            <div class="one">
+                <img src="/store/Insumos/mascara-gel.jpg" alt=" ">
+                <h3>Base reveladora</h3>
+
+                <h3>iluminadora</h3>
+
+                <h2>
+                    <span>$85.000</span>
+                </h2>
+            </div>
+
+            <div class="two">
+                <img src="/store/Insumos/base-iluminadora.jpg" alt=" ">
+                <h3>Base</h3>
+
+                <h3>iluminadora</h3>
+
+                <h2>
+                    <span>$85.000</span>
+                </h2>
+            </div>
+
+            <div class="three">
+                <img src="/store/Insumos/delineador ojos y cejas.jpg" alt=" ">
+                <h3>Delineador</h3>
+
+                <h3>de ojos y cejas</h3>
+
+                <h2>
+                    <span>$80.000</span>
+                </h2>
+            </div>
+
+            <div class="four">
+                <img src="/store/Insumos/delineador rosa.jpg" alt=" ">
+                <h3>Delineador</h3>
+
+                <h3>fino brillante</h3>
+
+                <h2>
+                    <span>$40.000</span>
+                </h2>
+            </div>
+        </article>
+-->
+
+    </section>
+
+
+
+    <!--Footer-->
+
+    <footer class="final">
+
+        <article class="final__left">
+            <h5>Servicios en línea</h5>
+            <ul>
+                <a href="#">Envíos</a>
+                <br>
+                <a href="#">Contáctanos</a>
+                <br>
+                <a href="#">Términos y condiciones</a>
+                <br>
+                <a href="#">Políticas de privacidad</a>
+            </ul>
+        </article>
+
+        <!--Footer-->
+        <article class="final__center">
+            <h5>Descubre</h5>
+            <ul>
+                <a href="#">Lo más nuevo</a>
+                <br>
+                <a href="#">Promociones</a>
+                <br>
+                <a href="#">Eventos</a>
+                <br>
+                <a href="#">Servicios</a>
+                <br>
+                <a href="#">Tienda</a>
+
+            </ul>
+        </article>
+
+        <article class="final__right">
+            <h5>Redes sociales</h5>
+            <img src="Insumos/redes.png">
+            <p>©2018, Chanel Cosmetics</p>
+        </article>
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>

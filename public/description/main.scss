@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fuentes*/
+@font-face {
+    font-family: nova;
+    src: url("/fonts/Proxima_Nova_Light.otf");
+
+}
+
+@font-face {
+    font-family: script;
+    src: url("/fonts/SignPainterHouseScriptRegular.ttf");
+
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: nova;
+}
+
+span {
+    font-family: script;
+    color: #fa3468;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+button {
+
+    font-family: nova;
+    text-decoration: none;
+    border: none;
+    color: white;
+}
+
+
+/*Navegación global*/
+
+.global {
+    padding: 0 15%;
+    background-color: white;
+    box-shadow: 0px 17px 26px -15px rgb(238, 237, 237);
+    font-family: nova;
+    text-decoration: none;
+    display: flex;
+
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 10px;
+
+    &__logo {
+        text-align: center;
+        //margin: auto 75px;
+        width: 15%;
+    }
+
+    & h2 {
+        font-size: 16px;
+    }
+}
+
+.global :hover {
+    color: #fa3468;
+    text-decoration: none;
+}
+
+/*Sub navegacion global*/
+
+.global__subcategory {
+    margin-top: 18px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 17px 26px -15px rgb(230, 229, 229);
+    height: 40px;
+
+    & img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: stretch;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    & img:hover {
+        background-image: url(/store/Insumos/carrito-hover.png);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 20px;
+        height: 20px;
+    }
+}
